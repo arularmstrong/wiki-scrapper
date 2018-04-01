@@ -1,0 +1,39 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="stylesheets/style.css">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var s;
+      $("#submit").click(function() {
+        s = $("#user_search").val();
+              $.post("http://localhost:3000/save",{
+          search: s
+        }, function(data) {
+        //alert(data);
+          document.getElementById("result").innerHTML=data;
+        });
+      });
+    });
+  </script>
+</head>
+
+<body>
+  	
+      <div class="botbody">
+        <textarea rows="45" cols="50" id="result">
+        </textarea>
+
+        <input type="text" id="user_search" >
+<input type="button" id="submit" value="Submit">
+    </div>
+
+  
+  <p id="result"></p>
+
+</body>
+
+</html>

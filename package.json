@@ -1,0 +1,29 @@
+{
+  "name": "wiki-scrapper",
+  "version": "1.0.0",
+  "description": "getting info from wiki",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arularmstrong/wiki-scrapper.git"
+  },
+  "keywords": [
+    "wikiapi"
+  ],
+  "author": "arul armstrong",
+  "license": "ISC",
+   "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongodb": "^2.2.33",
+    "request": "^2.83.0",
+    "sentence-tokenizer": "^1.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/arularmstrong/wiki-scrapper/issues"
+  },
+  "homepage": "https://github.com/arularmstrong/wiki-scrapper#readme"
+}
